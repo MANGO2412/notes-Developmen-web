@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- font style h3 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;500&family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <!-- font style p-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;500&display=swap" rel="stylesheet">
+    <title>Store taks</title>
+</head>
+<body>
+    <div class="container">
+        <div>
+          <form id="form">
+              <label for="namepost">Titulo</label>
+              <input type="text" name="namepost" id="namepost" placeholder="title note" >
+              <label for="content">Contenido de la tarea</label>
+              <textarea name="content" id="content" cols="30" rows="10" placeholder="type a text "></textarea>
+              <button type="submit" id="submit" name="submit">Guardar</button>
+          </form>
+        </div>
+        <div id="listTask">
+            <h2>My taks</h2>
+        </div>
+    </div>
+    <!-- scripts -->
+    <script type="module" src="/main.js"></script>
+</body>
+</html>

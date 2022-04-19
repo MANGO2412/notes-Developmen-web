@@ -1,0 +1,68 @@
+*{
+ padding-right: 30px;
+ margin: 0;
+ background-color: aquamarine;
+}
+
+/*
+pseudo Elements.
+   1)::after
+   2)::before
+   3)::first-letter
+   4)::first-line
+   5)::marker
+   6)::placeholder
+   7)::selection
+
+ */
+
+
+
+ .one::after{
+     content:"hello My name is Manuel";
+     color:blue;
+     border-bottom:1px solid black;
+ }
+
+
+ .two::before{
+     content:"Hello My name is Manuel";
+     color: blue;
+     border-bottom:1px solid black;
+ }
+
+ .two::first-letter{
+     color:red;
+     font-size:2em;
+ }
+
+
+/* exercise two */
+.three::first-letter{
+    color:#4d9c92;
+    font-size:2em;
+}
+
+.four::first-line{
+    color:#2d2dcf;
+    font-size:20px;
+}
+
+/* exersive three */
+::marker{
+    color: #2d2dcf;
+    font-size: 30px;
+}
+
+/* excersive four */
+input::placeholder{
+    color:brown;
+    font: size 1.2em;
+    font-style: italic;
+}
+
+/* excersive five */
+p::selection{
+    background-color:#1a1515;
+    color: #4d9c92;
+}
