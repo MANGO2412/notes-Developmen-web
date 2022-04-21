@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #caja{
+            border: 1px solid black;
+        }
+        
+        .ubication{
+            width: 500px;
+            height: 500px;
+            border: 1px solid black;
+        }
+
+
+        .father{
+            display: flex;
+        }
+        .cIn{
+            border: 1px solid black;
+            width: 100px;
+            height: 70px;
+        }
+    </style>
+</head>
+<body>
+    <h1>hello wolord</h1>
+    <!-- click, mousedown, mouseup -->
+    <div>
+        <button id="action1">inserta un evento </button>
+    </div>
+
+    <!-- mousemove -->
+     <div>
+         <!-- caja -->
+         <canvas id="caja" width="500" height="500"></canvas>
+     </div>
+
+    <!-- Modifiers -->
+     <div>
+         <button id="mod">pressed Alt+Shift+click</button>
+     </div>
+
+     <!-- coordinates clientX/Y and page X/Y -->
+     <div>
+         <div class="ubication"></div>
+         <div>
+             <p>information about the coordinates</p>
+             <div class="father">
+                <div class="cIn">clientX <span id="cx"></span></div>
+                <div class="cIn">clientY <span id="cy"></span></div>
+
+                <div class="cIn">pageX <span id="px"></span></div>
+                <div class="cIn">pageY <span id="py"></span></div>
+             </div>
+         </div>
+     </div>
+    <script src="./main.js"></script>
+</body>
+</html>

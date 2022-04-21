@@ -1,8 +1,0 @@
-
-class sheets {
-    constructor(){
-
-    }
-}
-
-export{}
