@@ -1,21 +1,15 @@
+import {Myexercise}from './exercise/exercise1.js'
+
 //mouse events
-
-let action1 = document.getElementById("action1");
-
-
-//click => 0
-action1.addEventListener("click",(e)=>{
-    alert("that event is a click: " + e.type)
-})
-
-action1.addEventListener("mousedown", (e)=>{
-    alert("that event is a mousedown: "+e.button);
-})
+let btn = document.getElementById("action1");
 
 
-action1.addEventListener("mouseup",(e)=>{
-    alert("That event is a mousep: "+e.button)
-})
+//mousedown
+ btn.addEventListener("contextmenu", (e)=>{
+     alert("that event is a contextmenu: "+e.button);
+ })
+
+
 
 
 //mousemove
@@ -105,4 +99,14 @@ ubication.addEventListener("mousemove", e =>{
     
 })
 
+
+
+document.getElementById("element1").addEventListener("copy",()=>{
+    alert("you can't that text")
+    return false 
+})
+
+//exercise about that topic 
+
+Myexercise("father","li");
 
